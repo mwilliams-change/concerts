@@ -17,9 +17,9 @@
     "prettier": "^1.15.3"
   },
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
