@@ -8,15 +8,11 @@ import data from "../data.json";
 
 const Sidebar = () => {
   const concertsByYear = {};
-  console.log("data", data);
   forEach(data, concert => {
-    console.log("concert", concert);
     const year = format(concert.date, "YYYY");
     if (!concertsByYear[year]) concertsByYear[year] = [];
     concertsByYear[year].push(concert);
   });
-
-  console.log("concertsByYear", concertsByYear);
 
   return (
     <div
