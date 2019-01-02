@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 
-const ConcertTile = ({ title, date, image }) => (
+const ConcertTile = ({ title, date, venue, image }) => (
   <div
     css={css`
       background-color: lightblue;
@@ -9,6 +9,7 @@ const ConcertTile = ({ title, date, image }) => (
   >
     <div>{title}</div>
     <div>{date}</div>
+    <div>{venue}</div>
     <img
       css={css`
         width: 100%;
