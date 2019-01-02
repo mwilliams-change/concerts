@@ -16,10 +16,6 @@ export default withRouter(
   withTheme(({ theme }) => {
     const defaultConcert = data[0];
 
-    if (typeof window !== "undefined") {
-      window.data = data;
-    }
-
     return (
       <Page>
         <Box width={[1, 1 / 4]}>
