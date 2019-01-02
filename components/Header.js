@@ -5,7 +5,7 @@ import Link from "next/link";
 const Header = () => (
   <div
     css={css`
-      background-color: hotpink;
+      background-color: darkslateblue;
     `}
   >
     <Link href="/">
