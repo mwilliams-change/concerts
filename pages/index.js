@@ -4,17 +4,16 @@ import { withTheme } from "emotion-theming";
 import { withRouter } from "next/router";
 
 import data from "../data.json";
-import { useMedia } from "../lib/usemedia";
 
 import { Box } from "@rebass/grid/emotion";
 
 import Page from "../layouts/main";
+import IsDesktop from "../components/IsDesktop";
 import Sidebar from "../components/Sidebar";
 import ConcertTile from "../components/ConcertTile";
 
 export default withRouter(
   withTheme(({ theme }) => {
-    const isWide = useMedia(`(min-width: ${theme.breakpoints[0]})`);
     const defaultConcert = data[0];
 
     if (typeof window !== "undefined") {
@@ -27,11 +26,11 @@ export default withRouter(
           <Sidebar />
         </Box>
 
-        {isWide ? (
+        <IsDesktop>
           <Box width={3 / 4}>
             <ConcertTile {...defaultConcert} />
           </Box>
-        ) : null}
+        </IsDesktop>
       </Page>
     );
   })
