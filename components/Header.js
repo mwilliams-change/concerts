@@ -2,19 +2,14 @@
 import { jsx, css } from "@emotion/core";
 import Link from "next/link";
 
-const style = css`
-  background-color: hotpink;
-`;
-
-const linkStyle = css`
-  margin-right: 15px;
-  text-decoration: underline;
-`;
-
 const Header = () => (
-  <div css={style}>
+  <div
+    css={css`
+      background-color: hotpink;
+    `}
+  >
     <Link href="/">
-      <a css={linkStyle}>Home</a>
+      <a>Home</a>
     </Link>
   </div>
 );
