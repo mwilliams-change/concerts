@@ -9,6 +9,7 @@ import data from "../data.json";
 import { useMedia } from "../lib/usemedia";
 
 import Page from "../layouts/main";
+import BackBar from "../components/BackBar";
 import Sidebar from "../components/Sidebar";
 import ConcertTile from "../components/ConcertTile";
 
@@ -29,6 +30,7 @@ export default withRouter(
           </Box>
         ) : null}
         <Box width={[1, 3 / 4]}>
+          {!isWide ? <BackBar /> : null}
           <ConcertTile {...concert} />
         </Box>
       </Page>

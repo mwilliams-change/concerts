@@ -1,17 +1,17 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import Link from "next/link";
+import { Box } from "@rebass/grid/emotion";
 
 const Header = () => (
-  <div
+  <Box
     css={css`
       background-color: hotpink;
     `}
+    fontSize={[4, 5]}
+    p={[1, 2]}
   >
-    <Link href="/">
-      <a>Home</a>
-    </Link>
-  </div>
+    {"Concerts App"}
+  </Box>
 );
 
 export default Header;
