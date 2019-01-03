@@ -7,6 +7,7 @@ const Header = () => (
     css={css`
       background-color: hotpink;
     `}
+    as={"header"}
     fontSize={[4, 5]}
     p={[1, 2]}
   >

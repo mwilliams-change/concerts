@@ -19,13 +19,20 @@ export default withRouter(({ router }) => {
   return (
     <Page>
       <IsDesktop>
-        <Box width={1 / 4}>
+        <Box
+          css={css`
+            overflow-y: scroll;
+          `}
+          flex={"1"}
+        >
           <Sidebar />
         </Box>
       </IsDesktop>
-      <Box width={[1, 3 / 4]}>
+      <Box flex={"2 0px"}>
         <IsMobile>
-          <BackBar />
+          <Box pt={[4, 5]}>
+            <BackBar />
+          </Box>
         </IsMobile>
         <ConcertTile {...concert} />
       </Box>

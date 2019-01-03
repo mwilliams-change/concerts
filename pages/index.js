@@ -18,12 +18,18 @@ export default withRouter(
 
     return (
       <Page>
-        <Box width={[1, 1 / 4]}>
+        <Box
+          css={css`
+            overflow-y: scroll;
+          `}
+          flex={"1"}
+          mt={[4, 5]}
+        >
           <Sidebar />
         </Box>
 
         <IsDesktop>
-          <Box width={3 / 4}>
+          <Box flex={"2 0px"}>
             <ConcertTile {...defaultConcert} />
           </Box>
         </IsDesktop>

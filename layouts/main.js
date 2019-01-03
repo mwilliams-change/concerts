@@ -10,9 +10,23 @@ export default ({ children }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
     </Head>
-    <Box width={1}>
+    <Box
+      css={css`
+        position: fixed;
+      `}
+      width={1}
+    >
       <Header />
     </Box>
-    <Flex>{children}</Flex>
+    <Flex
+      css={css`
+        height: 100vh;
+      `}
+      alignItems={"stretch"}
+      flexDirection={"row"}
+      flexWrap={"wrap"}
+    >
+      {children}
+    </Flex>
   </div>
 );
