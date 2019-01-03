@@ -28,6 +28,7 @@ const Sidebar = () => {
             <Link href={`/concert?id=${concert.id}`}>
               <Box
                 css={css`
+                  background-color: gainsboro;
                   border: solid 1px darkgray;
                   border-radius: 5px;
                   cursor: pointer;
