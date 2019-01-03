@@ -1,6 +1,10 @@
 # Concerts app
 
-A simple list-detail app. On mobile the list is displayed, and clicking an item brings you to a detail page. On desktop the list is a sidebar, with the detail component next to it.
+A simple list-detail app.
+
+On mobile the list is displayed clicking an item brings you to a detail page with a back button.
+
+On desktop the list is a sidebar with the detail component next to it.
 
 ## Deployed here
 
